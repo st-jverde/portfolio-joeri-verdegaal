@@ -1,0 +1,54 @@
+:root {
+  --color-primary: #eb2f64;
+  --color-primary-light: #FF3366;
+  --color-primary-dark: #BA265D;
+
+  --color-grey-light-1: #faf9f9;
+  --color-grey-light-2: #f4f2f2;
+  --color-grey-light-3: #f0eeee;
+  --color-grey-light-4: #ccc;
+  --color-grey-light-4: #ccc;
+
+
+  --color-grey-dark-2: #777;
+  --color-grey-dark-3: #999;
+  /* background-color: #F5F5F5; */
+
+  // Background
+  --color-grey-dark-1: #272727;
+  // Text
+  --color-pink-light-text: #F9F3EE;
+  // SHADOW
+  --shadow-dark: 0 2rem 6rem rgba(0,0,0,.3);
+  // FONTS
+  --header-font-family: 'Roboto';
+  --header-font-style: normal;
+
+  --sub-header-font-family: 'Roboto Mono';
+  --sub-header-font-style: italic;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%; // 1rem = 10px 10px/16px = 62.5%
+}
+
+
+p {
+  font-family: 'Roboto Mono';
+  font-style: italic;
+  font-size: 1.4rem;
+  line-height: 1.5;
+}
