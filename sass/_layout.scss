@@ -30,6 +30,11 @@
 
   &--li {
     padding-right: 8rem;
+
+    a {
+      text-decoration: none;
+      color: var(--color-pink-light-text);
+    }
   }
 }
 
@@ -122,6 +127,10 @@
 
     &--project-h2 {
       margin-top: 4rem;
+
+      a {
+        color: var(--color-pink-light-text);
+      }
     }
 
     &--arrow {

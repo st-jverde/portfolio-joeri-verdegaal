@@ -33,6 +33,7 @@
 html {
   box-sizing: border-box;
   font-size: 62.5%;
+  scroll-behavior: smooth;
 }
 @media (max-width: 75em) {
   html {
@@ -107,6 +108,10 @@ a {
 .nav__main--li {
   padding-right: 8rem;
 }
+.nav__main--li a {
+  text-decoration: none;
+  color: var(--color-pink-light-text);
+}
 
 .section-header {
   display: flex;
@@ -169,6 +174,9 @@ a {
 }
 .section-header__right--project-h2 {
   margin-top: 4rem;
+}
+.section-header__right--project-h2 a {
+  color: var(--color-pink-light-text);
 }
 .section-header__right--arrow {
   margin-right: 2rem;
@@ -259,10 +267,12 @@ a {
 }
 .section-projects {
   margin: 5rem 10rem;
+  scroll-margin-top: 10rem;
 }
 
 .section-about-me {
   margin: 10rem 40rem;
+  scroll-margin-top: 10rem;
 }
 .section-about-me p {
   text-align: justify;
@@ -272,9 +282,15 @@ a {
     margin: 10rem 20rem;
   }
 }
+.section-about-me__img {
+  width: 100%;
+  margin-top: 6rem;
+  border-radius: 2rem;
+}
 
 .section-contact {
   margin: 10rem 40rem;
+  scroll-margin-top: 10rem;
 }
 .section-contact a, .section-contact p {
   color: var(--color-grey-dark-1);
