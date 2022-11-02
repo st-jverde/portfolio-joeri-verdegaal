@@ -269,6 +269,9 @@ a {
   margin: 5rem 10rem;
   scroll-margin-top: 10rem;
 }
+.section-projects p {
+  text-align: justify;
+}
 
 .section-about-me {
   margin: 10rem 40rem;
@@ -301,4 +304,21 @@ a {
   font-size: 1.4rem;
   line-height: 1.5;
   padding-bottom: 1rem;
+}
+
+.section-naturescape {
+  margin: 10rem 40rem;
+}
+.section-naturescape h4 {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 1.4rem;
+  line-height: 1.5;
+}
+.section-naturescape p {
+  font-style: normal;
+}
+.section-naturescape a {
+  color: #A9355C;
 }/*# sourceMappingURL=style.css.map */
