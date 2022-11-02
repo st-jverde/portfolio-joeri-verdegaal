@@ -10,6 +10,7 @@
   width: 100%;
   top: 0;
   left: 0;
+  z-index: 100;
 
   font-family: var(--sub-header-font-family);
   font-style: var(--sub-header-font-style);
@@ -39,7 +40,7 @@
   justify-content: center;
   flex-wrap: wrap;
   // margin: 2.5rem;
-  height: 100vh;
+  height: 100%;
   background-color: var(--color-grey-dark-1);
   background-size: cover;
   padding: 10rem;

@@ -34,12 +34,49 @@ html {
   box-sizing: border-box;
   font-size: 62.5%;
 }
+@media (max-width: 75em) {
+  html {
+    font-size: 56.25%;
+  }
+}
+@media (max-width: 56.25em) {
+  html {
+    font-size: 50%;
+  }
+}
+@media (min-width: 112.5em) {
+  html {
+    font-size: 75%;
+  }
+}
+
+.secondary-header {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 900;
+  font-size: 5rem;
+  color: var(--color-grey-dark-1);
+  margin-top: 10rem;
+  margin-bottom: 4rem;
+  text-align: center;
+}
+
+.card-header {
+  font-family: "Roboto";
+  font-style: normal;
+  font-size: 2.5rem;
+  margin-bottom: 0.5rem;
+}
 
 p {
   font-family: "Roboto Mono";
   font-style: italic;
   font-size: 1.4rem;
   line-height: 1.5;
+}
+
+a {
+  text-decoration: none;
 }
 
 .container {
@@ -51,6 +88,7 @@ p {
   width: 100%;
   top: 0;
   left: 0;
+  z-index: 100;
   font-family: var(--sub-header-font-family);
   font-style: var(--sub-header-font-style);
   font-size: 1.4rem;
@@ -74,7 +112,7 @@ p {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
-  height: 100vh;
+  height: 100%;
   background-color: var(--color-grey-dark-1);
   background-size: cover;
   padding: 10rem;
@@ -167,4 +205,84 @@ p {
 .avatar {
   height: 25rem;
   border-radius: 47% 53% 69% 31%/38% 23% 77% 62%;
+}
+
+.card-category {
+  background-size: cover;
+  background-position: center;
+  height: 180px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-size: 24px;
+  font-weight: bold;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  padding: 5rem;
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 4rem;
+}
+
+@media (min-width: 100px) and (max-width: 575px) {
+  .cards {
+    grid-template-columns: 1fr;
+  }
+}
+@media (min-width: 576px) {
+  .cards {
+    grid-template-columns: 1fr;
+  }
+}
+@media (min-width: 768px) {
+  .cards {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+@media (min-width: 992px) {
+  .cards {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+@media (min-width: 1200px) {
+  .cards {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+.section-projects {
+  margin: 5rem 10rem;
+}
+
+.section-about-me {
+  margin: 10rem 40rem;
+}
+.section-about-me p {
+  text-align: justify;
+}
+@media (max-width: 75em) {
+  .section-about-me {
+    margin: 10rem 20rem;
+  }
+}
+
+.section-contact {
+  margin: 10rem 40rem;
+}
+.section-contact a, .section-contact p {
+  color: var(--color-grey-dark-1);
+  text-align: center;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 1.4rem;
+  line-height: 1.5;
+  padding-bottom: 1rem;
 }/*# sourceMappingURL=style.css.map */

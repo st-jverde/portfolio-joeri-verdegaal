@@ -1,0 +1,30 @@
+.section-projects {
+  margin: 5rem 10rem;
+  // height: 80vh;
+}
+
+.section-about-me {
+  margin: 10rem 40rem;
+
+  p {
+    text-align: justify;
+  }
+
+  @include respond(tab-land) { // width < 900
+    margin: 10rem 20rem;
+  }
+}
+
+.section-contact {
+  margin: 10rem 40rem;
+  a, p {
+    color: var(--color-grey-dark-1);
+    text-align: center;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 1.4rem;
+    line-height: 1.5;
+    padding-bottom: 1rem;
+  }
+}
