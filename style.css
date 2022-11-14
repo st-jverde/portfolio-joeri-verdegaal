@@ -69,6 +69,10 @@ html {
   margin-bottom: 0.5rem;
 }
 
+.card-p {
+  text-align: center;
+}
+
 p {
   font-family: "Roboto Mono";
   font-style: italic;
@@ -268,9 +272,6 @@ a {
 .section-projects {
   margin: 5rem 10rem;
   scroll-margin-top: 10rem;
-}
-.section-projects p {
-  text-align: justify;
 }
 
 .section-about-me {
