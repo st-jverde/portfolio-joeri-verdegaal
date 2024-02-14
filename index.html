@@ -1,106 +1,194 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-  <script src="https://kit.fontawesome.com/4246bfbe7f.js" crossorigin="anonymous"></script>
+    <script
+      src="https://kit.fontawesome.com/4246bfbe7f.js"
+      crossorigin="anonymous"
+    ></script>
 
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;500;800&family=Poppins:wght@300&family=Roboto+Mono:ital,wght@0,100;0,400;0,700;1,100;1,400;1,700&family=Roboto:wght@100;400;900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;500;800&family=Poppins:wght@300&family=Roboto+Mono:ital,wght@0,100;0,400;0,700;1,100;1,400;1,700&family=Roboto:wght@100;400;900&display=swap"
+      rel="stylesheet"
+    />
 
-  <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css" />
 
-  <title>Joeri Verdegaal | Web Developement Portfolio</title>
-</head>
-<body>
-  <div class="container">
-    <nav class="nav__main">
-      <ul class="nav__main--ul">
-        <li class="nav__main--li"><a href="#home">home</a></li>
-        <li class="nav__main--li"><a href="#projects">projects</a></li>
-        <li class="nav__main--li"><a href="#about-me">about me</a></li>
-        <li class="nav__main--li"><a href="#contact">contact</a></li>
-      </ul>
-    </nav>
-    <header class="section-header" id="home">
+    <title>Joeri Verdegaal | Web Developement Portfolio</title>
+  </head>
+  <body>
+    <div class="container">
+      <nav class="nav__main">
+        <ul class="nav__main--ul">
+          <li class="nav__main--li"><a href="#home">home</a></li>
+          <li class="nav__main--li"><a href="#projects">projects</a></li>
+          <li class="nav__main--li"><a href="#about-me">about me</a></li>
+          <li class="nav__main--li"><a href="#contact">contact</a></li>
+        </ul>
+      </nav>
+      <header class="section-header" id="home">
+        <div class="section-header__title">
+          <div class="section-header__title--main">
+            <h1>Joeri Verdegaal</h1>
+          </div>
 
-      <div class="section-header__title">
-
-        <div class="section-header__title--main">
-          <h1>Joeri Verdegaal</h1>
-        </div>
-
-        <div class="section-header__title--sub">
-          <h3>full-stack developer</h3>
-        </div>
-      </div>
-
-      <div class="section-header__right">
-        <div class="section-header__right--picture">
-          <img src="img/Portfolio-picture-square.jpeg" alt="avatar" class="avatar">
-        </div>
-
-        <div class="section-header__right--project-nav">
-          <p>based in Amsterdam, NL</p>
-          <hr>
-          <div class="section-header__right--container-project">
-            <h2 class="section-header__right--project-h2"><a href="#projects"><i class="fa-solid fa-arrow-down section-header__right--arrow bounce"></i> Projects</a></h2>
+          <div class="section-header__title--sub">
+            <h3>front-end developer</h3>
           </div>
         </div>
-      </div>
-    </header>
 
-    <section class="section-projects" id="projects">
-      <h3 class="secondary-header">Projects I worked on</h3>
-      <div class="cards">
-
-        <a href="naturEscpace.html">
-          <div class="card-category" style="background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(img/landing_page-naturEscape.jpg)">
-            <h6 class="card-header">NaturEscape</h6>
-            <p>Ruby on Rails | A full-stack web application to organise and participate in hiking events</p>
+        <div class="section-header__right">
+          <div class="section-header__right--picture">
+            <img
+              src="img/Portfolio-picture-square.jpeg"
+              alt="avatar"
+              class="avatar"
+            />
           </div>
-        </a>
 
-        <a href="on-the-boat-again.html">
-          <div class="card-category" style="background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(img/landingpage_On-the-boat-again.png)">
-            <h6 class="card-header">On The Boat Again</h6>
-            <p>Ruby on Rails | An Airbnb clone marketplace web application</p>
+          <div class="section-header__right--project-nav">
+            <p>based in Amsterdam, NL</p>
+            <hr />
+            <div class="section-header__right--container-project">
+              <h2 class="section-header__right--project-h2">
+                <a href="#projects"
+                  ><i
+                    class="fa-solid fa-arrow-down section-header__right--arrow bounce"
+                  ></i>
+                  Projects</a
+                >
+              </h2>
+            </div>
           </div>
-        </a>
-
-        <div class="card-category" style="background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(img/milad-fakurian-background.jpeg)">
-          <h6 class="card-header">Hearing Europe</h6>
-          <p class="card-p">Creative coding project |</p>
-          <p>Soon more...</p>
         </div>
+      </header>
 
-      </div>
-    </section>
+      <section class="section-projects" id="projects">
+        <h3 class="secondary-header">Projects:</h3>
+        <div class="cards">
+          <a href="projects/zen-time.html">
+            <div
+              class="card-category"
+              style="
+                background-image: linear-gradient(
+                    rgba(0, 0, 0, 0.5),
+                    rgba(0, 0, 0, 0.5)
+                  ),
+                  url(img/zen-time-4.png);
+              "
+            >
+              <h6 class="card-header">Zen Time</h6>
+              <p>React | Meditation timer with sound guidance</p>
+            </div>
+          </a>
 
-    <!-- About Me -->
-    <section class="section-about-me" id="about-me">
-      <h3 class="secondary-header">About me</h3>
-      <p>
-        Junior full-stack web developer, ready to start new opportunities in the tech industry. I look forward to developing my skills and hope to be part of communities that build great products that benefit our society.
-      </p>
-      <br>
-      <p>With my background in music composition, project management and coaching, I gained soft skills that can be useful as a programmer. I am comfortable working in a team, as well as being able to take responsibility on my own.</p>
-      <br>
-      <img src="img/presentation.jpg" alt="Presentation Le Wagon 2022" class="section-about-me__img">
-    </section>
+          <a href="projects/fcc-course.html">
+            <div
+              class="card-category"
+              style="
+                background-image: linear-gradient(
+                    rgba(0, 0, 0, 0.5),
+                    rgba(0, 0, 0, 0.5)
+                  ),
+                  url();
+              "
+            >
+              <h6 class="card-header">freeCodeCamp course</h6>
+              <p>
+                React, Redux and more | Front End Development Libraries.
+                Including 5 projects
+              </p>
+            </div>
+          </a>
 
-    <!-- Contact -->
-    <section class="section-contact" id="contact">
-      <h3 class="secondary-header">Contact</h3>
-      <p><a href="https://www.linkedin.com/in/joeri-verdegaal/" target="_blank">LinkedIn</a></p>
-      <p><a href="https://github.com/st-jverde" target="_blank">GitHub</a></p>
-      <p><a href="mailto:joeriverdegaal@gmail.com" target="_blank">joeriverdegaal(@)gmail.com</a></p>
+          <a href="projects/naturEscpace.html">
+            <div
+              class="card-category"
+              style="
+                background-image: linear-gradient(
+                    rgba(0, 0, 0, 0.5),
+                    rgba(0, 0, 0, 0.5)
+                  ),
+                  url(img/landing_page-naturEscape.jpg);
+              "
+            >
+              <h6 class="card-header">NaturEscape</h6>
+              <p>
+                Ruby on Rails | A full-stack web application to organise and
+                participate in hiking events
+              </p>
+            </div>
+          </a>
 
-    </section>
-  </div>
+          <!-- <div
+            class="card-category"
+            style="
+              background-image: linear-gradient(
+                  rgba(0, 0, 0, 0.5),
+                  rgba(0, 0, 0, 0.5)
+                ),
+                url(img/milad-fakurian-background.jpeg);
+            "
+          >
+            <h6 class="card-header">Hearing Europe</h6>
+            <p class="card-p">Creative coding project |</p>
+            <p>Soon more...</p>
+          </div> -->
+        </div>
+      </section>
 
-</body>
+      <!-- About Me -->
+      <section class="section-about-me" id="about-me">
+        <h3 class="secondary-header">About me</h3>
+        <p>
+          I'm a Front-End Developer with a background in project management,
+          music production, and coaching in the cultural sector. My journey to
+          the tech industry has been filled with diverse experiences that have
+          taught me a lot about creativity, teamwork, and pushing boundaries.
+        </p>
+        <br />
+        <p>
+          I'm always looking to learn more and get better at what I do and I
+          love to create applications that people enjoy to use and that ignite
+          creativity.
+        </p>
+        <br />
+        <p>
+          I care a lot about working on projects that help people and make the
+          world a better place. I want to use my skills to contribute to
+          something meaningful and work with teams that are doing important
+          work.
+        </p>
+        <br />
+        <p>Let's create something great together.</p>
+        <br />
+        <img
+          src="img/presentation.jpg"
+          alt="Presentation Le Wagon 2022"
+          class="section-about-me__img"
+        />
+      </section>
+
+      <!-- Contact -->
+      <section class="section-contact" id="contact">
+        <h3 class="secondary-header">Contact</h3>
+        <p>
+          <a href="https://www.linkedin.com/in/joeri-verdegaal/" target="_blank"
+            >LinkedIn</a
+          >
+        </p>
+        <p><a href="https://github.com/st-jverde" target="_blank">GitHub</a></p>
+        <p>
+          <a href="mailto:joeriverdegaal@gmail.com" target="_blank"
+            >joeriverdegaal(@)gmail.com</a
+          >
+        </p>
+      </section>
+    </div>
+  </body>
 </html>
