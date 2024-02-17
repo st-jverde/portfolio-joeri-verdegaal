@@ -30,7 +30,7 @@
 
 @mixin respond($breakpoint) {
   @if $breakpoint == phone {
-    @media (max-width: 37.5em) { @content}; //600px
+    @media (max-width: 38.5em) { @content}; //600px
   }
 
   @if $breakpoint == tab-port {
