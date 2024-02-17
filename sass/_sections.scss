@@ -9,8 +9,37 @@
 
 }
 
+// .section-about-me {
+//   margin: 10rem 2rem; // Start with a smaller default margin
+//   scroll-margin-top: 10rem;
+
+//   p {
+//     text-align: justify;
+//     width: 400px;
+//   }
+
+//   // Adjust margins for larger screens incrementally
+//   @include respond(tab-port) { // For tablets in portrait
+//     margin: 10rem 5rem;
+//   }
+
+//   @include respond(tab-land) { // For tablets in landscape
+//     margin: 10rem 10rem;
+//   }
+
+//   @include respond(big-desktop) { // For large desktops
+//     margin: 10rem 20rem;
+//   }
+
+//   &__img {
+//     width: 100%;
+//     margin-top: 6rem;
+//     border-radius: 2rem;
+//   }
+// }
+
 .section-about-me {
-  margin: 10rem 40rem;
+  margin: 10rem 10rem;
   scroll-margin-top: 10rem;
   p {
     text-align: justify;
@@ -28,11 +57,11 @@
 }
 
 .section-contact {
-  margin: 10rem 40rem;
+  // margin: 0 auto;
   scroll-margin-top: 10rem;
   a, p {
     color: var(--color-grey-dark-1);
-    text-align: center;
+    text-align: left;
     font-family: 'Roboto';
     font-style: normal;
     font-weight: 600;
@@ -43,7 +72,7 @@
 }
 
 .section-naturescape {
-  margin: 10rem 40rem;
+  margin: 10rem 10rem;
 
   h4 {
     font-family: 'Roboto';
