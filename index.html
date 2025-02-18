@@ -17,174 +17,122 @@
       rel="stylesheet"
     />
     <link rel="icon" href="/favicon.ico" type="image/x-icon" />
-    <link rel="stylesheet" href="style.css" />
+
+    <!-- Tailwind CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
 
     <title>Joeri Verdegaal | Portfolio</title>
   </head>
-  <body>
-    <div class="container">
-      <nav class="nav__main">
-        <ul class="nav__main--ul">
-          <li class="nav__main--li"><a href="#home">home</a></li>
-          <li class="nav__main--li"><a href="#projects">projects</a></li>
-          <li class="nav__main--li"><a href="#about-me">about me</a></li>
-          <li class="nav__main--li"><a href="#contact">contact</a></li>
+  <body class="bg-gray-100 text-gray-900">
+    <div class="container mx-auto p-2">
+      <nav
+        class="fixed top-0 left-0 w-full z-50 bg-gray-900 text-pink-100 border-b border-pink-100"
+      >
+        <ul class="flex justify-end items-center py-8 pr-8">
+          <li class="pr-8"><a href="#home" class="text-pink-100">home</a></li>
+          <li class="pr-8">
+            <a href="#projects" class="text-pink-100">projects</a>
+          </li>
+          <li class="pr-8">
+            <a href="#about-me" class="text-pink-100">about me</a>
+          </li>
+          <li><a href="#contact" class="text-pink-100">contact</a></li>
         </ul>
       </nav>
-      <header class="section-header" id="home">
-        <div class="section-header__title">
-          <div class="section-header__title--main">
-            <h1>Joeri Verdegaal</h1>
-          </div>
 
-          <div class="section-header__title--sub">
-            <h3>front-end developer</h3>
-          </div>
+      <header
+        class="flex justify-center items-center flex-wrap w-full h-full bg-gray-900 bg-cover p-32 rounded-2xl"
+        id="home"
+      >
+        <div class="flex flex-col items-start text-pink-100 mr-20">
+          <div class="text-5xl font-bold mb-8">Joeri Verdegaal</div>
+          <div class="font-mono text-4xl italic">front-end developer</div>
         </div>
-
-        <div class="section-header__right">
-          <div class="section-header__right--picture">
-            <img
-              src="img/Portfolio-picture-square.jpeg"
-              alt="avatar"
-              class="avatar"
-            />
-          </div>
-
-          <div class="section-header__right--project-nav">
-            <p>based in Amsterdam, NL</p>
-            <hr />
-            <div class="section-header__right--container-project">
-              <h2 class="section-header__right--project-h2">
-                <a href="#projects"
-                  ><i
-                    class="fa-solid fa-arrow-down section-header__right--arrow bounce"
-                  ></i>
-                  Projects</a
-                >
-              </h2>
-            </div>
-          </div>
+        <div class="flex flex-col items-center text-center text-pink-100 mt-20">
+          <img
+            src="img/Portfolio-picture-square.jpeg"
+            alt="avatar"
+            class="w-64 sm:w-32 rounded-full mb-20"
+          />
+          <a href="#projects" class="text-4xl font-bold inline-block mt-4">
+            <i class="fa-solid fa-arrow-down bounce"></i> Projects
+          </a>
         </div>
       </header>
 
-      <section class="section-projects" id="projects">
-        <h3 class="secondary-header">Projects</h3>
-        <div class="cards">
-          <a href="projects/zen-time.html">
-            <div
-              class="card-category"
-              style="
-                background-image: linear-gradient(
-                    rgba(0, 0, 0, 0.5),
-                    rgba(0, 0, 0, 0.5)
-                  ),
-                  url(img/zen-time-4.png);
-              "
-            >
-              <h6 class="card-header">Zen Time</h6>
-              <p>React | Meditation timer with sound guidance</p>
-            </div>
-          </a>
-
-          <a href="projects/fcc-course.html">
-            <div
-              class="card-category"
-              style="
-                background-image: linear-gradient(
-                    rgba(0, 0, 0, 0.5),
-                    rgba(0, 0, 0, 0.5)
-                  ),
-                  url();
-              "
-            >
-              <h6 class="card-header">freeCodeCamp course</h6>
-              <p>
-                React, Redux and more | Front End Development Libraries.
-                Including 5 projects
-              </p>
-            </div>
-          </a>
-
-          <a href="projects/naturEscpace.html">
-            <div
-              class="card-category"
-              style="
-                background-image: linear-gradient(
-                    rgba(0, 0, 0, 0.5),
-                    rgba(0, 0, 0, 0.5)
-                  ),
-                  url(img/landing_page-naturEscape.jpg);
-              "
-            >
-              <h6 class="card-header">NaturEscape</h6>
-              <p>
-                Ruby on Rails | A full-stack web application to organise and
-                participate in hiking events
-              </p>
-            </div>
-          </a>
-
-          <!-- <div
-            class="card-category"
-            style="
-              background-image: linear-gradient(
-                  rgba(0, 0, 0, 0.5),
-                  rgba(0, 0, 0, 0.5)
-                ),
-                url(img/milad-fakurian-background.jpeg);
-            "
-          >
-            <h6 class="card-header">Hearing Europe</h6>
-            <p class="card-p">Creative coding project |</p>
-            <p>Soon more...</p>
-          </div> -->
-        </div>
-      </section>
-
-      <!-- About Me -->
-      <section class="section-about-me" id="about-me">
-        <h3 class="secondary-header">About me</h3>
-        <p>
+      <section class="m-0 p-0 sm:p-2 sm:m-2 text-base sm:text-sm" id="about-me">
+        <h3 class="text-5xl font-extrabold mt-20 mb-10">About me</h3>
+        <p class="text-lg leading-relaxed">
           I'm a Front-End Developer with a background in project management,
-          music production, and coaching in the cultural sector. My journey to
-          the tech industry has been filled with diverse experiences that have
-          taught me a lot about creativity, teamwork, and pushing boundaries.
+          music production, and coaching in the cultural sector. I'm always
+          looking to learn more and get better at what I do and I love to create
+          applications that people enjoy to use and that ignite creativity.
         </p>
-        <br />
-        <p>
+        <!-- <p class="text-lg leading-relaxed">
           I'm always looking to learn more and get better at what I do and I
           love to create applications that people enjoy to use and that ignite
           creativity.
-        </p>
-        <br />
-        <p>
+        </p> -->
+        <p class="text-lg leading-relaxed">
           I care a lot about working on projects that help people and make the
           world a better place. I want to use my skills to contribute to
           something meaningful and work with teams that are doing important
-          work.
+          work. Let's create something great together!
         </p>
-        <br />
-        <p>Let's create something great together.</p>
-        <br />
         <img
           src="img/presentation.jpg"
           alt="Presentation Le Wagon 2022"
-          class="section-about-me__img"
+          class="m-auto w-64 rounded-xl shadow-lg mt-10"
         />
       </section>
 
-      <!-- Contact -->
-      <section class="section-contact" id="contact">
-        <h3 class="secondary-header">Contact</h3>
-        <p>
-          <a href="https://www.linkedin.com/in/joeri-verdegaal/" target="_blank"
+      <section class="p-6 sm:p-2 m-4 sm:m-2 text-base sm:text-sm" id="projects">
+        <h3 class="text-5xl font-extrabold mt-20 mb-16">Projects</h3>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <a href="projects/zen-time.html">
+            <div
+              class="bg-cover bg-center h-48 flex items-center justify-center text-white text-xl font-bold rounded-lg shadow-lg"
+              style="background-image: url(img/zen-time-4.png)"
+            >
+              <div class="bg-black bg-opacity-50 p-4">Zen Time</div>
+            </div>
+          </a>
+          <a href="projects/fcc-course.html">
+            <div
+              class="bg-cover bg-center h-48 flex items-center justify-center text-white text-xl font-bold rounded-lg shadow-lg"
+              style="background-image: url(img/fcc-course-2.png)"
+            >
+              <div class="bg-black bg-opacity-50 p-4">freeCodeCamp course</div>
+            </div>
+          </a>
+          <a href="projects/naturEscpace.html">
+            <div
+              class="bg-cover bg-center h-48 flex items-center justify-center text-white text-xl font-bold rounded-lg shadow-lg"
+              style="background-image: url(img/landing_page-naturEscape.jpg)"
+            >
+              <div class="bg-black bg-opacity-50 p-4">NaturEscape</div>
+            </div>
+          </a>
+        </div>
+      </section>
+
+      <section class="p-6 sm:p-2 m-4 sm:m-2 sm:text-sm" id="contact">
+        <h3 class="text-5xl font-extrabold mt-20 mb-10">Contact</h3>
+        <p class="text-lg">
+          <a
+            href="https://www.linkedin.com/in/joeri-verdegaal/"
+            class="text-black"
             >LinkedIn</a
           >
         </p>
-        <p><a href="https://github.com/st-jverde" target="_blank">GitHub</a></p>
-        <p>
-          <a href="mailto:joeriverdegaal@gmail.com" target="_blank"
+        <p class="text-lg">
+          <a href="https://github.com/st-jverde" class="text-black">GitHub</a>
+        </p>
+        <p class="text-lg">
+          <a href="mailto:joeriverdegaal@gmail.com" class="text-black"
             >joeriverdegaal(@)gmail.com</a
           >
         </p>
